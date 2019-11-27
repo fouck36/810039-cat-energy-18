@@ -29,7 +29,96 @@
       </nav>
     </header>
     <main>
-
+      <section class="appointment">
+        <div class="appointment__wrapper"></div>
+        <h2 class="appointment__title">Подбор программы</h2>
+        <p class="appointment__info">Заполните анкету и мы подберем
+          программу питания для вашего кота</p>
+        <form class="appointment__form">
+          <fieldset class="appointment__item cat-param">
+            <legend class="cat-param__title visually-hidden">Параметры кота</legend>
+            <ul class="cat-param__list">
+              <li class="cat-param__item">
+                <label for="cat-param__name">Имя:<span class="required-field">*</span></label>
+                <input id="cat-param__name" type="text" name="name" value="" placeholder="Барсик" required>
+              </li>
+              <li>
+                <label for="cat-param__weight">Вес:<span class="required-field">*</span></label>
+                <input id="cat-param__weight" type="text" name="weight" value="" placeholder="7" required>
+              </li>
+              <li>
+                <label for="cat-param__age">Возраст:</label>
+                <input id="cat-param__age" type="text" name="age" value="" placeholder="7">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="appointment-item cat-goals">
+            <legend class="cat-goals__title visually-hidden">Желаемый результат</legend>
+            <ul class="cat-goals__list">
+              <li class="cat-goals__item">
+                <input class="cat-goals__input" type="radio" name="desired-goals" value="slim" id="cat-goals__slim" checked>
+                <label for="cat-goals__slim">Похудение</label>
+              </li>
+              <li class="cat-goals__item">
+                <input class="cat-goals__input" type="radio" name="desired-goals" value="mass" id="cat-mass"  checked>
+                <label for="cat-mass">Набор массы</label>
+              </li>
+              <li class="cat-goals__item">
+                <input class="cat-goals__input" type="radio" name="desired-goals" value="advice" id="cat-goals__advice" checked>
+                <label for="cat-goals__advice">Не знаю (нужен ваш совет)</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="appointment-item cat-contacts">
+            <legend class="cat-contacts__title">Контактные данные
+              (владельца кота)</legend>
+            <ul class="cat-contacts__list">
+              <li class="cat-contacts__item">
+                <label for="cat-contacts__email">E-mail:<span class="required-field">*</span></label>
+                <input class="cat-contacts__input" id="cat-contacts__email" type="email" name="email" value="" placeholder="kuklachev@gmail.com" required>
+              </li>
+              <li>
+                <label for="cat-contacts__phone">Телефон:<span class="required-field">*</span></label>
+                <input class="cat-contacts__input" id="cat-contacts__phone" type="tel" name="phone" value="" placeholder="kuklachev@gmail.com" required>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="appointment-item cat-comment">
+            <legend class="cat-comment__title">Комментарий</legend>
+            <ul class="cat-comment__list">
+              <li class="cat-comment__item">
+                <textarea  name="text" id="cat-comment__text">Расскажите обо всех повадках
+                  кота</textarea>
+                <label class="visually-hidden" for="cat-comment__text">Расскажите обо всех повадках
+                  кота</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="appointment__item cat-extras">
+            <legend class="cat-extras__title">Дополнительно</legend>
+            <ul class="cat-extras__list">
+              <li class="cat-extras__item">
+                <input class="cat-extras__input" type="checkbox" name="cat-extras" value="sweetener" id="cat-extras__sweetener" checked>
+                <label for="cat-extras__sweetener">Сахарозаменитель</label>
+              </li>
+              <li class="cat-extras__item">
+                <input class="cat-extras__input" type="checkbox" name="cat-extras" value="water" id="cat-extras__water">
+                <label for="cat-extras__water">Сахарозаменитель</label>
+              </li>
+              <li class="cat-extras__item">
+                <input class="cat-extras__input" type="checkbox" name="cat-extras" value="milk" id="cat-extras__milk">
+                <label for="cat-extras__milk">Сахарозаменитель</label>
+              </li>
+              <li class="cat-extras__item">
+                <input class="cat-extras__input" type="checkbox" name="cat-extras" value="vitamin" id="cat-extras__vitamin">
+                <label for="cat-extras__vitamin">Сахарозаменитель</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="button" type="submit">Отправить заявку</button>
+          <p class="appointment__footnote">* — Обязательные поля</p>
+        </form>
+      </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__map map">
