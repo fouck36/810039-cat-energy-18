@@ -1,0 +1,122 @@
+.meal-plans__list {
+  .list-reset;
+  display: flex;
+  flex-direction: column;
+}
+
+.meal-plans__wrapper {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.meal-plans__item {
+  background-color: @block-background-color;
+  width: 280px;
+  min-height: 266px;
+  margin-top: 20px;
+  padding: 20px;
+  //margin: 0 auto;
+  position: relative;
+}
+
+.meal-plans__title {
+  .theme-basic-font;
+  color: @heading-font-color;
+  font-size: 24px;
+  text-transform: uppercase;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 70px;
+  margin-top: 15px;
+}
+
+.meal-plans__title::before {
+  content: "";
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: contain;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: @theme-color;
+  margin-left: 22px;
+  position: absolute;
+  top: 24px;
+  left: 2px;
+}
+
+.meal-plans__item--slim::before {
+  content: "";
+  background-image: url("../../img/icon-cat-slim.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 35px;
+  min-height: 49px;
+  object-fit: contain;
+  display: block;
+  position: absolute;
+  top: 22px;
+  left: 33px;
+  z-index: 1;
+}
+
+.meal-plans__item--mass::before {
+  content: "";
+  background-image: url("../../img/icon-cat-pro.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 67px;
+  min-height: 28px;
+  object-fit: contain;
+  display: block;
+  position: absolute;
+  top: 35px;
+  left: 15px;
+  z-index: 1;
+}
+
+.meal-plans__description {
+  //margin-top: 5px;
+  padding-bottom: 23px;
+  .paragraph-basic-font;
+  font-size: 14px;
+  border-bottom: 1px solid @border-color;
+  width: 240px;
+  line-height: 1.29;
+}
+
+.meal-plans__button {
+  .theme-basic-font;
+  font-size: 16px;
+  color: @heading-font-color;
+  text-transform: uppercase;
+}
+
+.meal-plans__button :active {
+  color: rgba(17, 17, 17, 0.3);
+}
+.meal-plans__button::after {
+  content: "";
+  background-image: url("../../img/icon-right-arrow-long.svg");
+  width: 25px;
+  height: 12px;
+  object-fit: contain;
+  display: inline-block;
+  vertical-align: baseline;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 10px;
+}
+
+.meal-plans__button:hover::after {
+  content: "";
+  background-image: url("../../img/icon-right-arrow-verylong.svg");
+  width: 35px;
+  height: 12px;
+  object-fit: contain;
+  display: inline-block;
+  vertical-align: baseline;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 10px;
+}

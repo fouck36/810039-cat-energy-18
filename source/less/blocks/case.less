@@ -1,0 +1,95 @@
+.case {
+  background-color: @block-background-color;
+  min-height: 705px;
+}
+
+.case__wrapper {
+  width: 320px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.case__title {
+  font-family: @heading-font;
+  color: @heading-font-color;
+  font-size: 36px;
+  line-height: 60px;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  padding-top: 15px;
+  font-weight: normal;
+  //display: inline-block;
+  //vertical-align: middle;
+}
+
+.case_description {
+  .paragraph-basic-font;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.case__feature {
+  font-family: @paragraph-font;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: @paragraph-font-color;
+  border-left: 10px solid @block-background-color;
+  border-right: 60px solid @block-background-color;
+  position: absolute;
+  width: 70px;
+  background-color: @block-background-color;
+  text-align: center;
+}
+
+.case__feature--weight {
+  top: 45px;
+  left: -15px;
+}
+
+.case__feature--time {
+  top: 45px;
+  right: 30px;
+}
+
+.case__list {
+  width: 280px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-top: 25px;
+}
+
+.case__value {
+  font-family: @heading-font;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 24px;
+  color: @heading-font-color;
+  border: 2px solid @border-color;
+  border-radius: 7%;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 12px;
+  width: 124px;
+}
+
+.case__cost {
+  font-family: @heading-font;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+  color: @heading-font-color;
+  text-transform: uppercase;
+  margin-left: 50px;
+  margin-top: 37px;
+}
+
+.case__slider-text {
+  font-family: @heading-font;
+  font-size: 16px;
+  font-weight: normal;
+  color: @heading-font-color;
+  text-transform: uppercase;
+}
